@@ -1,0 +1,87 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 40px;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+:root{
+    --man-color:#4CAF50;
+    --manf8-color:#f05123;
+    
+}
+
+
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+.container-f8{ /* phải canh box giữa trang và canh chữ giữa box */
+    display: flex;
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center;     /* Canh giữa theo chiều dọc */
+    height: 4rem;           /* Chiều cao của container */
+
+}
+.f8link{
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background-color: var(--manf8-color);
+    padding: 8px 10px; /* kích thước của ô cam */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;/* bo tròn góc */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.462);
+    transition: transform 0.2s;
+
+
+
+}
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .course-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.462);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+
+  .course-card:hover {
+    transform: scale(1.02);
+  }
+
+  .course-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    background-color: var(--man-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Canh giữa theo chiều dọc */
+    align-items: center;       /* Canh giữa theo chiều ngang */
+    text-align: center;        /* Căn giữa dòng chữ */
+    border-radius: 4px;/* bo tròn góc */
+
+  }
+.course-link {
+    text-decoration: none;
+    
+  }
+
+  .course-description {
+    font-size: 16px;
+    color: #404040;
+  }
