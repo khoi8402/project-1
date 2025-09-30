@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>padding in css</title>
+        <style>
+            .home-button{
+                background-color: #FD4505;
+                width: 60px;
+                height: 30px;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+            }
+            .home-button a{
+                text-decoration: none;
+                color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Padding?</h1>
+        <a href="https://www.youtube.com/watch?v=aj-lD4XXr8A&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=14">padding bai 14</a>
+        <p></p>
+        <div class="box box001">Box 1</div>
+        <div class="box box002">Box 2</div>
+        <div class="box box003">Box 3</div>
+
+
+        <div>
+            <h2>reset margin được mặt địnhđịnh</h2>
+            
+            <a href="https://fullstack.edu.vn/learning/html-css?id=55d8dbfc-4e84-4b57-9d1e-b412c71fcebf">reset margin được mặt địnhđịnh</a>
+            <h3>Lý do</h3>
+            <p>Trên trình duyệt được đặt sẵn một số thuộc tính CSS mặc định, trong đó có thuộc tính 
+                <span class="highlight">margin</span>
+                , đây là thuộc tính tạo ra một khoảng cách giữa các thẻ. Cụ thể trong tình huống trên, 
+                thẻ body mặc định có <span class="highlight">margin: 8px</span>
+                , vì vậy body đang đẩy ra xung quanh 8px và gây ra hiện tượng trên.
+            </p>
+            <hr>
+            <h3>Cách khắc phục</h3>
+
+            <p>
+                <strong>Không chỉ thẻ body</strong>, một số thẻ thông dụng như h1-h6, p cũng có margin mặc định. Trong thực tế, điều này thường tạo ra những khoảng trắng ngoài ý muốn. Để khắc phục chúng ta sẽ 
+                <span class="highlight">Reset CSS</span> bằng cách sau
+            </p>
+        </div>
+        <p>Sử dụng * selector, vì nó tác động lên mọi thẻ, vì vậy chúng ta có thể reset cho mọi thẻ:</p>
+        <p class="indent01">* { </p>
+
+        <p class="indent"><span style="color:blue;">margin</span>: 0; /* Loại bỏ margin mặc định */</p>
+
+        <p class="indent"><span style="color:blue;">padding</span>: 0; /* Loại bỏ padding mặc định */</p>
+
+        <p class="indent01">}</p>
+        <h1>Thực hành reset CSS</h1>
+        <p>đây là ví dụ về các đơn vị css units </p>
+        <a href="https://fullstack.edu.vn/learning/html-css?id=4945d2fd-929f-4790-85c7-21cfa0464d14">thực hành các đơn vị reset css</a>
+            
+        <div class="home-button"><a href="index.html">HOME</a></div>
+    </body>
+
+</html>

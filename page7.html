@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pseudo classes-Lớp giả</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <style>
+            .home-button{
+                background-color: #FD4505;
+                width: 60px;
+                height: 30px;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+            }
+            .home-button a{
+                text-decoration: none;
+                color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Pseudo classes trong CSS (lớp giả)</h1>
+        </div>
+        <a class="button" href="https://fullstack.edu.vn/learning/html-css?id=90e61d96-7f5e-4356-a67f-07821b33df4b">lớp giả Pseudo classes </a>
+        <div>
+            <ul>
+                <li>:root</li>
+                <p> <span class="highlight">:root</span> trong CSS là một selector đặc biệt dùng để chọn phần tử gốc của tài liệu, thường là thẻ <html> trong trang web.
+                    <br>Nó thường được dùng để khai báo biến CSS (custom properties), <span class="highlight">kiểu như "biến toàn cục" mà bạn có thể thay đổi nhiều thẻ cùng môjt lúc</span>
+                    <br>Tên của thẻ root là --tên tự đặt-
+                </p>
+                <li>:hover</li>
+                <p id="hover">sẽ được kích hoạt khi di chuột đến nó</p>
+                <li>:active</li>
+                <li>:first-child</li> <!--child thẻ con đầu -->
+                <li>:last-child</li> <!--child thẻ con đuôi -->
+            </ul>
+        </div>
+        <div class="home-button"><a href="index.html">HOME</a></div>
+    </body>
+</html>
