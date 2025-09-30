@@ -23,37 +23,83 @@
     }
 
     /* Sidebar bên trái */
-    .sidebar {
+    .sidebar-menu {
+      position: relative;
       width: 60px;
       height: 210px;
-      background: #222;
       position: relative;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 20px;
+      background: var(--man-black-color);
       margin: 10px;
       padding: 20px 0;
-      gap: 20px;
       border-radius: 12px;
+      align-items: center;
     }
 
-    .sidebar button {
-      width: 35px;
-      height: 35px;
-      border-radius: 5px;
+    .sidebar-menu .menu-btn {
+      background: transparent;
+      color: var(--man-color);
       border: none;
-      background: #333;
+      font-size: 20px;
+      padding: 12px;
+      border-radius: 6px;
       cursor: pointer;
       transition: 0.3s;
-      color: white;       /* màu icon */
-      font-size: 16px;    /* chỉnh size icon */
+      width: 58px;
+      height: 35px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: center; /*canh trên dưới*/
+      justify-content: center; /*canh trái phải*/
     }
 
-    .sidebar button:hover {
+    .sidebar-menu .menu-btn:hover {
       background: var(--manf8-color);
+      color: #fff;
+      
+    }
+
+    /* menu cha */
+    .sidebar-menu .menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* submenu ẩn mặc định */
+    .sidebar-menu .submenu {
+      display: none;
+      position: absolute;
+      top: -36px;
+      left: 60px; /* nằm bên phải sidebar */
+      width: 140px;
+      height: auto;
+      background: rgba(16, 16, 18, 0.8);
+      color: var(--man-color);
+      backdrop-filter: blur(8px);
+      border: 1.5px solid var(--manf8-color);
+      border-radius: 12px;
+      padding: 10px 0;
+      list-style: none;
+      z-index: 99;
+    }
+
+    .sidebar-menu .submenu li {
+      color: var(--man-color);
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .sidebar-menu .submenu li:hover {
+      color: var(--manf8-color);
+    }
+
+    /* khi hover vào menu cha thì hiện submenu */
+    .sidebar-menu .menu:hover .submenu {
+      display: block;
     }
 
     /* Phần nội dung bên phải */
@@ -70,6 +116,8 @@
       font-size: 25px;
       letter-spacing: 0.2em; /* = 14% */
       border-bottom: 2px solid #000000;
+      background: #333335;
+      color: var(--man-color);
 
     }
     .main {
