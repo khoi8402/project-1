@@ -7,7 +7,9 @@
     }
    
     body {
-      font-family: 'Be Vietnam Pro', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      width: 100%;
+      min-height: 100vh;
       background: var(--man-color);
       margin: 0;
       padding: 0;
@@ -27,7 +29,6 @@
       position: relative;
       width: 60px;
       height: 210px;
-      position: relative;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -72,7 +73,7 @@
       position: absolute;
       top: -36px;
       left: 60px; /* nằm bên phải sidebar */
-      width: 140px;
+      width: 155px;
       height: auto;
       background: rgba(16, 16, 18, 0.8);
       color: var(--man-color);
@@ -83,7 +84,21 @@
       list-style: none;
       z-index: 99;
     }
-
+    .sidebar-menu .submenu .link-html a, .github a, .Porfolio a{
+      color: inherit;
+      text-decoration: none;
+    }
+    .sidebar-menu .submenu .project{
+      text-align: center; /* canh giữa chữ */
+      font-weight: bold;  /* in đậm */
+      color: var(--manf8-color);
+      cursor: default;      /* con trỏ bình thường */
+      pointer-events: none; /* bỏ luôn hover/click */
+    }
+    .sidebar-menu .submenu .br a{
+      text-decoration: none;
+      color: inherit;
+    }
     .sidebar-menu .submenu li {
       color: var(--man-color);
       font-family: "Jost", sans-serif;
@@ -97,11 +112,37 @@
       color: var(--manf8-color);
     }
 
+
     /* khi hover vào menu cha thì hiện submenu */
     .sidebar-menu .menu:hover .submenu {
       display: block;
     }
 
+    .face{
+      position: absolute;
+      bottom: 10px;
+      margin: 0 24px;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .face button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 15px 0;
+      background: none;
+      border: none;
+      font-size: 36px;
+    }
+    .face button:hover{
+      color: var(--man1-color);
+
+    }
+    .face .gmail{
+      font-size: 32px;
+    }
     /* Phần nội dung bên phải */
     .content {
       flex: 1;
@@ -114,6 +155,7 @@
       text-align: center;
       padding: 15px;
       font-size: 25px;
+      font-weight: bold;
       letter-spacing: 0.2em; /* = 14% */
       border-bottom: 2px solid #000000;
       background: #333335;
@@ -122,6 +164,7 @@
     }
     .main {
       display: flex;
+      position: relative;
     }
 
     .list {
@@ -131,7 +174,6 @@
       padding: 10px 20px;
       border-left: 2px solid #000000;
     }
-
     .list-item {
       display: flex;
       justify-content: space-between;
@@ -143,6 +185,21 @@
       background: var(--man-color);
       cursor: pointer;
       transition: all 0.2s ease;
+    }
+    .list .list-item-h1{
+      border-top: 2px solid #000000;
+      border-right: 2px solid #000000;
+      border-left: 2px solid #000000;
+      padding: 5px;
+    }
+    .list h1{
+      text-align: center;
+      font-size: 25px;
+      background: var(--man-black-color);
+      color: var(--man-color);
+      margin: 0;
+      padding: 10px 0;
+      letter-spacing: 5px;
     }
     .list-item a {
       display: flex;

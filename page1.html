@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="vi"> 
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>F8-TU-HOC</title>
         <!--những thẻ cơ bản-->
@@ -17,212 +17,110 @@
         <!--div-->
         
         <style>
-
-
-/*kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
-
-            :root {
-            --main-color: #ff6600; /* màu cam */
-            --sidebar-bg: #161618;
-            }
-
-            .sidebar {
-                position: relative;
+            body{
+                font-family: 'Quicksand', sans-serif;
                 display: flex;
-                flex-direction: column;
-                gap: 10px;
-                background: var(--sidebar-bg);
-                padding: 10px;
-                border-radius: 10px;
-                width: 60px;
-                align-items: center;
-            }
-
-            .sidebar button {
-                background: transparent;
-                border: none;
-                color: white;
-                font-size: 20px;
-                padding: 12px;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: 0.3s;
-                width: 80px;
-            }
-
-            .sidebar button:hover {
-                background: var(--main-color);
-                color: #fff;
-                width: 80px;
-            }
-
-            /* menu cha */
-            .menu {
-                position: relative;
-                display: inline-block;
-            
-            }
-
-            /* submenu ẩn mặc định */
-            .submenu {
-                display: none;
-                position: absolute;
-                top: -27px;
-                left: 80px; /* nằm bên phải sidebar */
-                width: 140px;
-                height: 300px;
-                background: rgba(16, 16, 18, 0.92); /* blur nền */
-                backdrop-filter: blur(8px); 
-                border: 2px solid var(--main-color); /* stroke màu cam */
-                border-radius: 16px;
-                padding: 10px 20px;
-                list-style: none;
-                z-index: 99;
-                
-            }
-
-            .submenu li {
-                color: white;
-                font-family: "Jost", sans-serif;
-                font-size: 16px;
-                padding: 10px;
-                cursor: pointer;
-                transition: 0.3s;
-                
-            }
-
-            .submenu li:hover {
-                color: var(--main-color);
-                
-            }
-
-            /* khi hover vào nút menu thì hiện submenu */
-            .menu:hover .submenu {
-                display: block;
-            }
-
-/*kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
-            .home-button{
-                background-color:#FD4505;
-                width: 120px;
-                height: 30px;
-                margin-top: 20px;
-                display: flex;
-                align-items: center;
                 justify-content: center;
-                border-radius: 3px;
+            }
+            .container{
+                background: #dadada;
+                border-radius: 8px;
+                border: 2px solid #fd43059b;
+                width: 600px;
+                height: 750px;
+                display: flex;
+                flex-direction: column; /* xếp dọc */
+                align-items: center;     /* canh giữa theo chiều ngang */
+                gap: 10px   ;
+                margin: 0;
+            }
+            h1{
+                margin-top: 30px;
+            }
+            h2{
+                margin: 5px 0;
+            }
+
+            .dangky{
+                text-align: center;
+            }
+            .home-button, .testbg{
+                text-align: center;
+                margin: 10px 0;
+
             }
             .home-button a{
+                background: #FD4505;
+                color: white;
                 text-decoration: none;
-                color:white;
-
+                padding: 5px 60px;
+                border-radius: 5px;
+                
             }
+            .testbg a{
+                background: #FD4505;
+                color: white;
+                text-decoration: none;
+                padding: 5px 22px;
+                border-radius: 5px;
+                
+            }
+
 
 
 
         </style>
     </head>
     <body>
-        <h1>TỰ HỌC LẬP TRÌNH HTML VÀ CSS</h1>
-
-        <p>XIN CHAO THE GIOI</p>
-        
-<!--kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-->
-
-        <div class="sidebar">
-            <div class="menu">
-                <button class="menu-btn"><i class="fa-solid fa-list"></i></button>
-                <ul class="submenu">
-                    <li>HTML & CSS</li>
-                    <li>JavaCrip</li>
-                    <li>Java</li>
-                    <li>Figma</li>
-                    <li>GitHub</li>
-                    <li>Git</li>
-                </ul>
+        <div class="container">
+            <h1>TỰ HỌC LẬP TRÌNH HTML VÀ CSS</h1>
+            <h2>BÀI 1</h2>
+            <p>XIN CHAO THE GIOI</p>
+            
+            <a href="https://www.youtube.com/watch?v=AzmdwZ6e_aM&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=7">Những thẻ HTML thông dụng</a>
+            
+            <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t39.30808-1/475643205_1543962013045406_3942870715545789176_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oytGlb2YGYoQ7kNvwEhKsfk&_nc_oc=Adl8PZICWRjK3LdTa0TsENdrSNhocsSbYCPiJTARCtC84eJ-8D-Fj_gKlGUJGOdtvSxhTCBXZtgCtNWRlrG5jkOa&_nc_zt=24&_nc_ht=scontent-itm1-1.xx&_nc_gid=xNSo1NQiCgQ_GWhB6D9ldQ&oh=00_AfFLPBu91kzcY4GHkRQKuUauynxnZQ24tHSdku63_eQepw&oe=680831E8" alt="erro">
+            
+            <ul>
+                <li>Ul là dạng hiển thị danh sáchsách</li>
+                <li>chứa li trong thẻ ul</li>
+                <li>li*4 là hiện 4 dòng</li>
+                <li>đây là ví dụ</li>
+            </ul>
+    
+            <table>
+                <thead>
+                    <th>STT</th>
+                    <th>Ten</th>
+                </thead>
+    
+                <tbody>
+                    <td>01</td>
+                    <td>NGUEN ANH KHAI  </td>
+                </tbody>
+            </table>
+    
+            <div>
+                <input type="text">
             </div>
-
-            <div class="menu">
-                <button class="menu-btn"><i class="fa-solid fa-download"></i></button>
-                <ul class="submenu">
-                    
-                    <li>JavaCrip</li>
-                    <li>Java</li>
-                    <li>Figma</li>
-                    <li>GitHub</li>
-                    <li>Git</li>
-                </ul>
+    
+            <div>
+                <input type="checkbox">
+                    <div>
+                        <!--đặt 3 cái input trùng name thì sẽ chỉ trọn được 1 cái -->
+                        <input name="tuoi" type="radio">
+                        <input name="tuoi" type="radio">
+                        <input name="tuoi" type="radio">
+                    </div>            
             </div>
-
-            <div class="menu">
-                <button class="menu-btn"><i class="fa-solid fa-film"></i></button>
-                <ul class="submenu">
-                    
-                    <li>Java</li>
-                    <li>Figma</li>
-                    <li>GitHub</li>
-                    <li>Git</li>
-                </ul>
+    
+            <div class="dangky">
+                <button>ĐĂNG KÝ</button>
             </div>
-
-            <div class="menu">
-                <button class="menu-btn"><i class="fa-solid fa-headphones"></i></button>
-                <ul class="submenu">
-                    <li>HTML & CSS</li>
-                    <li>JavaCrip</li>
-                    
-                </ul>
-            </div>
-
-        </div>
-<!--kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-->
-
-<!--kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-->
-
-
-        <a href="https://www.youtube.com/watch?v=AzmdwZ6e_aM&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=7">Những thẻ HTML thông dụng</a>
-        
-        <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t39.30808-1/475643205_1543962013045406_3942870715545789176_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oytGlb2YGYoQ7kNvwEhKsfk&_nc_oc=Adl8PZICWRjK3LdTa0TsENdrSNhocsSbYCPiJTARCtC84eJ-8D-Fj_gKlGUJGOdtvSxhTCBXZtgCtNWRlrG5jkOa&_nc_zt=24&_nc_ht=scontent-itm1-1.xx&_nc_gid=xNSo1NQiCgQ_GWhB6D9ldQ&oh=00_AfFLPBu91kzcY4GHkRQKuUauynxnZQ24tHSdku63_eQepw&oe=680831E8" alt="erro">
-        
-        <ul>
-            <li>Ul là dạng hiển thị danh sáchsách</li>
-            <li>chứa li trong thẻ ul</li>
-            <li>li*4 là hiện 4 dòng</li>
-            <li>đây là ví dụ</li>
-        </ul>
-
-        <table>
-            <thead>
-                <th>STT</th>
-                <th>Ten</th>
-            </thead>
-
-            <tbody>
-                <td>01</td>
-                <td>NGUEN ANH KHAI  </td>
-            </tbody>
-        </table>
-
-        <div>
-            <input type="text">
-        </div>
-
-        <div>
-            <input type="checkbox">
-                <div>
-                    <!--đặt 3 cái input trùng name thì sẽ chỉ trọn được 1 cái -->
-                    <input name="tuoi" type="radio">
-                    <input name="tuoi" type="radio">
-                    <input name="tuoi" type="radio">
-                </div>            
-        </div>
-
-        <div>
-            <button>ĐĂNG KÝ</button>
-        </div>
-        <div class="home-button"><a href="index.html">HOME</a></div>
-
-
+            <div class="home-button"><a href="index.html">HOME</a></div>
+            <div class="testbg"><a href="test-backgr/test-backgr.html">Test Background</a></div>
+    
+        </div  >
 
     </body>
 </html>
